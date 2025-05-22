@@ -2,15 +2,17 @@ from Fonctions.gestion_livres import *
 from Fonctions.gestion_lecteurs import *
 import keyboard
 
+EMPRUNTS_PATH = "Data/emprunts.json"
+
 def get_emprunts():
     # Charger le fichier JSON
-    with open("Data/Emprunts.json", "r", encoding="utf-8") as f:
+    with open(EMPRUNTS_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
     return data
 
 #Enregistrer les emprunts dans le fichier JSON 
 def set_emprunts(data):
-    with open("Data/Emprunts.json", "w", encoding="utf-8") as f:
+    with open(EMPRUNTS_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print("Fichier Emprunts enregistré avec succès.")
 

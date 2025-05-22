@@ -1,4 +1,4 @@
-# Gestion Bibliotèque
+# Gestion Bibliothèque
 
 ## Remarques
 Sous Windows, utilisez WSL.

@@ -1,11 +1,29 @@
 # Gestion Bibliothèque
 
 ## Remarques
-Sous Windows, utilisez WSL.
+Ce projet a besoin d'une version Python >= `Python 3.10`
 
 De plus, cette application pourrait ne pas fonctionner correctement sur Mac OS, car elle dépend du paquet Python `keyboard`. Ce paquet prend en charge Windows et Linux, ainsi qu'un support expérimental pour Mac OS, selon la documentation. Ce paquet simule les événements du clavier.
 
 ## Utilisation
+
+### Windows
+Créez un environnement virtuel pour tester l'application
+
+```shell
+cd Gestion_Bibliotheque
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+Ensuite, lancez l'application
+
+```shell
+python main.py
+```
+
+### Linux
 Créez un environnement virtuel pour tester l'application
 
 ```shell
@@ -27,6 +45,7 @@ python main.py
 sudo .venv/bin/python main.py
 ```
 
+### Application
 L'application a plusieurs menus qui vous guident à travers les options disponibles :
 
 - Menu Principal
